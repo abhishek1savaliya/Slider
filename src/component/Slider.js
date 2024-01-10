@@ -50,8 +50,8 @@ const Slide = () => {
     return (
         <div className="container mx-auto p-4">
             <div className="bg-gradient-to-r from-blue-200 via-green-200 to-yellow-200 p-6 rounded shadow mb-4">
-                {/* Gradient background from blue to green to yellow */}
-                <p className="text-lg font-semibold mb-2">Custom range slider:</p>
+
+                <p className="text-lg font-semibold mb-2">Slider:</p>
                 <div className="mb-4">Min: {values[0]} && Max: {values[1]}</div>
                 <Slider
                     getAriaLabel={() => 'Minimum distance'}
@@ -91,7 +91,7 @@ const Slide = () => {
                     {
                         products.map((item, index) => (
                             <div key={item.id} className={`bg-gradient-to-r ${index % 2 === 0 ? 'from-green-100 via-teal-100 to-blue-100' : 'from-red-100 via-orange-100 to-yellow-100'} p-6 rounded shadow`}>
-                                {/* Alternate gradient backgrounds based on index */}
+                    
                                 <img src={item.thumbnail} alt={item.title} className="mb-4 w-full rounded-lg shadow-md" />
                                 <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
                                 <p className="text-gray-600 mb-2">{item.description}</p>
